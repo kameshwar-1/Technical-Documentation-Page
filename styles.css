@@ -1,0 +1,152 @@
+body{
+display:block;
+background-color:#ffffff;
+color:black;
+font-family:sans-serif;
+margin:0px;
+width:100%;
+}
+#navbar{
+  display:block;
+  position:fixed;
+  height:100%;
+  border-right:4px solid black;
+  width:300px;
+  margin:0 auto; 
+  min-width:180px;
+  overflow:auto;
+}
+#main-doc{
+  position:absolute;
+  display:block;
+  margin-left:340px;
+  width:cals(100%-300px);
+  padding:10px 0 30 0;
+  overflow:auto;
+}
+nav header{
+  display:block !important;
+  text-align:center !important;
+  font-size:35px !important;
+  margin:10px !important;
+}
+#main_ul{
+display:block;
+height:90%;
+padding:0px;
+margin:0px;
+text-align:left;
+list-style:none;
+} 
+
+#main_li{
+border-top:3px solid black;
+width:100%;
+height:30%;
+padding:0px 0 0 5;
+margin:25px auto;
+font-size:25px;
+color:black;
+min-height:20%;
+overflow:auto;
+}
+#main_li ul{
+  display:block;
+  padding:20px 0px 0px 0px; 
+  list-style:none;
+  width:100%;  
+}
+#main_li ul li{  
+border-top:0.1px solid black; 
+margin:0 auto;
+padding:20px 5px 20px 2px;
+font-size:20px;
+width:auto;
+}
+
+li>a{
+  text-decoration: none; 
+ color:black;
+}
+
+#main_li>ul>#li1::before {
+  content: "1.";
+}
+#main_li>ul>#li2::before {
+  content: "2.";
+}
+#main_li>ul>#li3::before {
+  content: "3.";
+}
+#main_li>ul>#li4::before {
+  content: "4.";
+}
+#main_li ul a:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+#main_li a:hover{
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+#main_ul li ul li a{
+  display:inline-block;
+  padding:0px 0 0 5;
+  margin:1 auto;
+}
+
+header{
+  display:block;
+  text-align:left;
+  font-size:3em;
+  padding:10 0 10 0px;
+}
+section{
+  display:block;
+  font-family:sans-serif;
+}
+h1{
+  display:block !important;
+  font-size:2em !important;
+  font-family:arial !important;
+  padding:0 0 0 20px !important;
+}
+div{
+  display:block;
+  padding:0 1.5em 0 3em;
+  font-size:1em;
+}
+#intro p{
+  padding: 0 0 0 20px
+}
+#ana_of_html ul li{
+padding:5px;
+}
+#ana_of_html ul li::before{
+content:"# ";
+}
+#code{
+  display:block;
+  font-size:1em;
+  padding:20 0 20 40;
+  margin:20px 0 20px 0;
+  background-color:#f5f1f8;
+}
+@media(max-width:600px){
+  #code{
+    background-color:light-green;
+  }
+}
+
+#code_html{
+  border-bottom:2px solid black;
+  background-color:#b1c1f8;
+}
+
+
+
+
+
+
