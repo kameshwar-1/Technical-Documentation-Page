@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+     <meta charset="utf-8">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul id="main_ul">
+        <li id="main_li"><a class="nav-link"  href="#HTML_introduction">
+          HTML Introduction</a>
+          <ul>
+            <li id="li1"><a class ="intro" href="#Introduction">Introduction</a></li>
+            <li id="li2"><a class="perp"  href="#Prerequisites" >Prerequisites</a></li>
+          </ul>
+        </li>
+        <li id="main_li"><a class="nav-link"  href="#Basics_of_HTML"= >Basics of HTML</a>
+          <ul>
+             <li id="li1"><a class="element" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a></li>
+             <li id="li2"><a class="att"  href="#Attributes" >Attributes</a></li>
+             <li id="li3"><a class="document"  href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a></li>
+          </ul>
+        </li>
+        <li id="main_li"><a class="nav-link"  href="#What_is_head_in_HTML"> What is head in HTML</a>
+          <ul>
+             <li id="li1"><a class="head" href="#what_is_the_Html_head">what is the Html head</a></li>
+             <li id="li2"><a class="title" href="#Adding_a_title">Adding a title</a>
+             <li id="li3"><a class="meta" href="#Meta_element">Meta element</a>
+             <li id="li4"><a class="css and java" href="#Applying_CSS_and_JavaScript_to_HTML">Applying CSS and JavaScript to HTML</a></li>
+          </ul>
+        </li>
+        <li id="main_li"><a class="nav-link"   href="#HTML_text_fundamentals" >HTML Text Fundamentals</a>
+         <ul>
+             <li id="li1"><a class="head and paragrph" href="#The_basics:heading_and_paragraphs">The basics:heading and paragraphs</a></li>
+             <li id="li2"><a class="list" href="#Lists">L
+               ists</a>
+          </ul>
+        </li>
+
+
+        <li id="main_li"><a class="nav-link"  href="#Creating_hyperlinks">Creating Hyperlinks</a>
+         <ul>
+             <li id="li1"><a class="links" href="#what_is_a_hyperlink">what is a hyperlink</a></li>
+             <li id="li2"><a class="anatomy link" href="#anatomy_of_a_hyperlink">anatomy of a hyperlink</a>
+          </ul>
+ </li>
+         <li id="main_li">
+           <a class="nav-link"  href="#Reference">Reference</a>
+         </li>
+     </ul>
+ </nav>
+ <main id="main-doc">
+<section class="main-section" id="HTML_introduction">
+<header>HTML introduction</header>      
+
+        <h1 id="Introduction">Introduction</h1>  
+        <div id="intro">
+        HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.
+
+        <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way.</p>
+</div>
+         <h1 id="Prerequisites">Prerequisites</h1> 
+<div>
+         you should have at least basic familiarity with using computers and using the web passively.You should have a basic work environment set up (as detailed in Installing basic software), and understand how to create and manage files as detailed in Dealing with files.
+</div>
+
+</section>
+      <section class="main-section" id="Basics_of_HTML">
+      <header>Basics of HTML</header>
+
+  <div>
+       In this article, we cover the absolute basics of HTML. To get you started, this article defines elements, attributes, and all the other important terms you may have heard. It also explains where these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other important basic language features. Along the way, there will be an opportunity to play with HTML too!
+       </div>
+    <h1 id="Anatomy_of_an_HTML_element">Anatomy of an HTML element</h1>
+<div id="ana_of_html">    
+The anatomy of our element is:
+          <ul>  
+          <li><span>The opening tag:</span> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+          </li>
+          <li><span>The content:</span>This is the content of the element. In this example, it is the paragraph text.</li>
+          <li><span>The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+          </li>
+          </ul>
+        Example:
+       <code id="code"> 
+         <p id="code_html">HTML</p> 
+         <p><span><</span>p<span>></span> My cat is very grumpy.<span><</span><span>/</span>p<span>></span></p>
+        </code>
+
+  </div>            
+      <h1 id="Attributes">Attributes</h1>
+      <div>
+        <p>Attributes contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
+        Example of class attribute:
+<code id="code">
+<p>
+  <span><</span>p class="editor-note"<span>></span>My cat is very grumpy <span><</span>p<span>></span>
+</p>
+</code>
+
+<p>Attributes contain extra information about the element that won't appear in the content. In this example, the <code>class</code> attribute is an identifying name used to target the element with style information.</p>
+     An attribute should have:
+<ul>            
+ <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)
+<li>The attribute name, followed by an equal sign.</li>
+<li>An attribute value, wrapped with opening and closing quote marks.</li>
+</ul>
+</div> 
+     <h1 id="Anatomy_of_an_HTML_document">Anatomy of an HTML Document</h1>
+     <div>
+     Individual HTML elements aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:
+     <code id="code">
+       <p id="code_html">HTML</p>
+        <p>Copy to Clipboard</p>
+        <p><span><</span>!doctype html<span>></span></p>
+        <p><span><</span>html lang="en-US"<span>></span></p>
+  <p><span><</span>head<span>></span></p>
+    <p><span><</span>meta charset="utf-8" <span>/></span></p>
+    <p><span><</span>title<psan>></span>My test page<span><</span>title></p>
+    <p>
+<span><</span>/head<span>></span></p>
+  <p><span><</span>body<span>></span></p>
+    <p>This is my page</p>
+    <p><span><</span>body<span>></span></p>
+<span><</span>/html<span>></span></p>
+       </code>
+       <ul>
+     <li>
+      <p><code><span>!DOCTYPE html:</span></code> The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.
+       . <code>!DOCTYPE html</code> is the shortest string of characters that counts as a valid doctype. That is all you need to know!</p>
+      </li>
+      <li>
+         <p><code><span><</span>html<span>></span><span><</span>/html<span>></span></code>: The <code><span><</span>html<span>></span></code> element. This element wraps all the content on the page. It is sometimes known as the root element.</p>
+      </li>
+      <li>
+        <p><code><span><</span>head<span>></span><span><</span>/head<span>></span></code>: The <code><span><</span>head<span>></span></code> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You will learn more about this in the next article of the series.</p>
+        </li>
+        <li>
+        <p><code><span><</span>title<span>></span><span><</span>/title<span>></span></code>: The <code><span><</span>title<span>></span></code> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is.</p>
+        </li>
+        <li>
+        <p><code><span><</span>body<span>></span><span><</span>/body<span>></span></code>: The <code><span><</span>body<span>></span></code> element.
+          This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</p>
+          </li>
+</ul>
+</div>
+</section>
+
+
+<section class="main-section" id="What_is_head_in_HTML">
+  
+    <header>What is head in HTML</header>
+ 
+  <h1 id="what_is_the_Html_head">what is the html head</h1>
+    <div>   
+         The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <code>title</code>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document). Web browsers use information contained in the head to render the HTML document correctly.
+</div>      
+           <h1 id="Adding_a_title">Adding a title</h1>
+           <div>
+          this can be used to add a title to the document. This however can get confused with the <code>h1</code> element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!
+<li>
+The <code>h1</code> element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.</li>
+  <li>
+The <code><</code><code>title</code><code>></code> element is metadata that represents the title of the overall HTML document (not the document's content.</li>
+</p>
+</div>
+           <h1 id="Meta_element">Meta element</h1>
+           <div>
+          Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the <code>meta</code> element. 
+          <code id="code">
+          <p id="code_html">html</p>
+          <p><span><</span><span>meta charset="utf-8"/</span><span>></span></p></code>
+   
+this is an just example.
+</div>
+
+           <h1 id="Applying_CSS_and_JavaScript_to_HTML">Applying CSS and JavaScript to HTML</h1>
+           <div>
+          <p>Just about all websites you use in the modern day will employ CSS to make them look cool, and JavaScript to power interactive functionality, such as video players, maps, games, and more. These are most commonly applied to a web page using the <code>link</code> element and the <code>script</code> element, respectively.</p>
+</div>          
+</section>
+
+<section class="main-section" id="HTML_text_fundamentals">
+        <header>HTML text fundamentals</header>
+        
+           <h1 id="The_basics:heading_and_paragraphs">The basics:heading and paragraphs</h1>
+ <div>
+              <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+      In HTML, each paragraph has to be wrapped in a 
+            <code><</code><code>p</code><code>></code> element, like so:</p>
+
+          <code id="code">
+            <p id="code_html">HTML</p> 
+          <p><span><</span>p<span>></span>I am a paragraph, oh yes I am.<span><</span>/p<span>></span></p>
+</code>
+          Each heading has to be wrapped in a heading element:
+          <code id="code">
+            <p id="code_html">HTML</p> 
+          <p><span><</span>h1<span>></span>I am a paragraph, oh yes I am.<span><</span>/h1<span>></span></p>
+</code>
+
+          </div>
+           <h1 id="Lists">Lists</h1>
+            <div>
+          <p>Now let's turn our attention to lists. Lists are everywhere in life—from your shopping list to the list of directions you subconsciously follow to get to your house every day, to the lists of instructions you are following in these tutorials! On the web, we have three types of lists: unordered, ordered, and description.
+            </p>
+
+<p>Unordered and ordered lists are very common, and they're covered in this section. Description lists are less common, and we'll cover them in Advanced text formatting.</p>
+  Lets talk about unordered list:
+<h2>Unordered</h2>
+  <p>Unordered lists are used to mark up lists of items for which the order of the items doesn't matter. Let's take a shopping list as an example:</p>
+
+    <code id="code">
+              <span><</span><span>ul</span><span>></span>
+                   <p><span><</span><span>li</span><span>></span>milk<span><</span><span>li</span><span>></span></p>
+              <p><span><</span><span>li</span><span>></span>eggs<span><</span><span>li</span><span>></span></p>
+              <p><span><</span><span>li</span><span>></span>bread<span><</span><span>li</span><span>></span></p>
+              <p><span><</span><span>li</span><span>></span>hummus<span><</span><span>li</span><span>></span></p>
+              <span><</span><span>ul</span><span>></span>
+    </code>
+         </div>
+      </section>
+      
+
+<section class="main-section" id="Creating_hyperlinks">
+<header>Creating hyperlinks</header>
+
+     <h1 id="what_is_a_hyperlink">what is a hyperlink</h1>
+      <div>
+        Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).
+      </div>
+     
+           <h1 id="anatomy_of_a_hyperlink">anatomy of a hyperlink</h1>
+       <div>
+          A basic link is created by wrapping the text or other content inside an <code><<code>a</code>></code> element and using the <code>href</code> attribute, also known as a Hypertext Reference, or target, that contains the web address.
+
+          <code id="code">
+            <p id="code_html">html</p>
+             <span><</span>p<span>></span>  
+           <p>I'm creating a link to</p>
+           <p><span><</span>a href="https://www.mozilla.org/en-US/"> the Mozilla homepage<span><</span>/a<span>></span>.</p>
+           <span><</span>p<span>></span> 
+      </code>
+</div>
+</section>
+
+<section class="main-section" id="Reference">
+
+        <header>Reference</header>
+<div>
+All the documentation in this page is taken from<a href ="https://developer.mozilla.org/en-US/docs/Web/HTML"> MDN.</a>
+
+</div>     
+ </section>
+
+</main>
+</body>
+</html>
+
+
